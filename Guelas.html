@@ -1,0 +1,319 @@
+<!-- IMPORTS !-->
+<link href="https://fonts.googleapis.com/css2?family=Kufam:wght@500&display=swap" rel="stylesheet">
+
+<html>
+	<head>
+		<title>Allen Guelas Portfolio</title>
+		<style>
+			*
+			{
+				margin: 0;
+				padding: 0;
+			}
+			
+			body
+			{
+				text-align: center;
+			}
+			
+			.wrapper
+			{
+				width: 95%;
+				margin: 0 auto;
+			}
+			
+			.wrapper-content
+			{
+				width: 80%;
+				margin: 0 auto;
+			}
+			
+			header
+			{
+				height: 100px;
+				width: 100%;
+				background: #373737;
+				z-index: 12;
+				position: fixed;
+				transition: .2s;
+			}
+			
+			.logo
+			{
+				float: left;
+				line-height: 100px;
+			}
+			
+			.logo a
+			{
+				text-decoration: none;
+				font-size: 35px;
+				color: white;
+				font-family: Kufam, cursive;
+			}
+			
+			nav
+			{
+				float: right;
+				line-height: 100px;
+			}
+			
+			nav a
+			{
+				text-decoration: none;
+				font-family: Kufam;
+				letter-spacing: 3px;
+				font-size: 20px;
+				margin: 0px 10px;
+				color: white;
+				transition: .2s;
+			}
+			
+			nav a:hover
+			{
+				color: red;
+				text-shadow: white 3px 3px 10px;
+				transition: .2s;
+			}
+			
+			.about-banner
+			{
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				background-image: url(About_Banner.jpg);
+				background-size: cover;
+				background-position: center center;
+			}
+			
+			.about-banner h1
+			{
+				color: white;
+				text-shadow: #FCFCFC 3px 3px 10px;
+				font-size: 100px;
+				font-family: Kufam, cursive;
+				text-align: center;
+				padding-top: 50px;
+				text-transform: uppercase;
+				padding-top: 18%;
+			}
+			
+			.portfolio-banner
+			{
+				width: 100%;
+				height: 800px;
+				position: 100%;
+				background-image: url(Portfolio_Banner.jpg);
+				background-size: cover;
+				background-position: center center;
+			}
+			
+			.portfolio-banner h1
+			{
+				color: white;
+				text-shadow: #FCFCFC 3px 3px 10px;
+				font-size: 100px;
+				font-family: Kufam, cursive;
+				text-align: center;
+				padding-top: 50px;
+				text-transform: uppercase;
+				padding-top: 18%;
+			}
+			
+			.contact-banner
+			{
+				width: 100%;
+				top: 1025px;
+				height: 800px;
+				position: relative;
+				background-image: url(Contact_Banner.jpg);
+				background-size: cover;
+				background-position: center center;
+			}
+			
+			.contact-banner h1
+			{
+				color: white;
+				text-shadow: #FCFCFC 3px 3px 10px;
+				font-size: 100px;
+				font-family: Kufam, cursive;
+				text-align: center;
+				padding-top: 50px;
+				text-transform: uppercase;
+				padding-top: 18%;
+			}
+			
+			.content
+			{
+				width: 100%;
+				position: absolute;
+				top: 700px;
+				background: white;
+				background-size: cover;
+				background-position: center center;
+				height: 100%;
+			}
+			
+			.portfolio-content
+			{
+				width: 100%;
+				position: absolute;
+				background: white;
+				background-size: cover;
+				background-position: center center;
+				height: 120%;
+			}
+			
+			.contact-content
+			{
+				top: 3275px;
+				position: absolute;
+				width: 100%;
+				background: black;
+				background-size: cover;
+				background-position: center center;
+				height: 110%;
+			}
+			
+			.portfolio-content img
+			{
+				
+				padding: 50px;
+				width: 400px;
+				height: 400px;
+			}
+			
+			p
+			{
+				padding: 2%;
+				font-family: Kufam;
+				font-size: 20px;
+				line-height: 50px;
+				padding-left: 8em;
+				padding-right: 8em;
+			}
+			
+			.item1 {grid-area: photo;}
+			
+			.item2{grid-area: details;}
+			
+			.contact-grid
+			{
+				display: grid;
+				grid-template-areas:
+				'photo details';
+			}
+			
+			.contact-grid img
+			{
+				margin-top: 250px;
+				margin-left: 200px;
+				width: 350px;
+				height: 350px;
+				border-radius: 50%;
+				border: 1px solid white;
+				box-shadow: 0px 3px 10px rgba(255,255,255);
+				
+			}
+			
+			.contact-grid h2
+			{
+				font-family: Kufam, cursive;
+				color: white;
+				text-shadow: #FCFCFC 3px 3px 10px;
+				font-size: 50px;
+				width: 100%;
+				margin-top: 15%;
+			}
+			
+			.contact-grid p
+			{
+				font-family: Kufam, cursive;
+				color: white;
+				text-shadow: #FCFCFC 3px 3px 10px;
+				font-size: 25px;
+				text-align: left;
+			}
+			
+		</style>
+	</head>
+	<body bgcolor = "black">
+		<span id = "abt">
+		<div class = "box-area">
+			<header>
+				<div class = "wrapper">
+					<div class = "logo">
+						<a href = "#abt">Portfolio</a>
+					</div>
+					<nav>
+						<a href = "#abt">About</a>
+						<a href = "#prtfolio">Portfolio</a>
+						<a href = "#contact">Contact</a>
+					</nav>
+				</div>
+			</header>
+			<div class = "about-banner"><h1>about</h1></div>
+			<div class = "content">
+				<div class = "wrapper-content">
+					<p>
+						Hi there! My name is Allen Christopher G. Guelas from 2 - ITF. I made this website in partial fulfilment to my course, ICS2608 which is Applications Development and Emerging Technologies 1. The course is basically all about Web front-end development. Creating this website was a little hard for me because it has been a long time since I used HTML as a programming language. I learned a few new things while creating and designing this website. I also used a little extra tags that I just found out a few days ago. This tag is called the script tag and it is basically using a little bit of javascript in the page. I have much more things to learn in the future and I know that remembering all these codes will help me be a better programmer in the future. So, what is this page all about? This website is created as a mini portfolio on my hobby in shooting photographs of mostly, the sky and some architecture designs that I see around me. I am not yet a professional front-end web developer as well as a good photographer if I say so myself, but this website is going to be one of my stepping stone in achieving those milestones and being better in both web developing and photography. This website will become a memorable for me because it will be the first website I created in which I will be uploading online. Although I would not consider it as a real "live" website. I can consider this as the start in my future career. Thank you for visiting the website!
+					</p>
+				</div>
+				<span id = "prtfolio">
+				<div class = "portfolio-banner"><h1>portfolio</h1></div>
+				<div class = "portfolio-content">
+					</br>
+					<div class = "wrapper-content">
+						<div class = "portfolio-grid">
+							<div class = "grid">
+								<div class = "grid-container">
+									<a href = "portfolio/1.jpg"><img src = "portfolio/1_thmb.png"></a>
+									<a href = "portfolio/3.jpg"><img src = "portfolio/3_thmb.png"></a>
+									<a href = "portfolio/6.jpg"><img src = "portfolio/6_thmb.png"></a>
+									<a href = "portfolio/7.jpg"><img src = "portfolio/7_thmb.png"></a>
+									<a href = "portfolio/8.jpg"><img src = "portfolio/8_thmb.png"></a>
+									<a href = "portfolio/9.jpg"><img src = "portfolio/9_thmb.png"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<span id = "contact">
+				<div class = "contact-banner"><h1>contact</h1></div>
+				<div class = "contact-content">
+					<div class = "wrapper-content">
+						<div class = "contact-grid">
+							<div class = "item1"><img src = "Contact_Image.jpg"></div>
+							<div class = ""item2"><h2><u>Contact Information</u></h2>
+								<p>
+									</br>
+									Allen Christopher G. Guelas</br>
+									2 - ITF</br>
+									</br>
+									Email: allenchhristopher.guelas.iics@ust.edu.ph</br>
+									</br>
+									Contact Number: 09167774857</br>
+									</br>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			var scroll1 = window.pageYOffset;
+			window.onscroll = function(){
+					var scroll2 = window.pageYOffset;
+					if (scroll1 > scroll2) {
+						document.querySelector('header').style.top = "0";
+					}
+					else {
+						document.querySelector('header').style.top = "-100px";
+					}
+					scroll1 = scroll2;
+			}
+		</script>
+	</body>
+</html>
