@@ -1,0 +1,241 @@
+<!-- IMPORT !-->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+
+<html>
+	<head>
+		<title>The Pewdiepie Site</title>
+		<link rel = "icon" type = "image/png" href = "icon.png" />
+		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-car.min.css">
+		<style>
+			*
+			{
+				margin: 0;
+				padding: 0;
+			}
+
+			.navbar-style
+			{
+				background: #D3D3D3;
+				box-shadow: 0 5px 10px #EFEFEF;
+				text-transform: uppercase;
+			}
+			
+			.navbar-style li a
+			{
+				padding: 28px;
+				color: black;
+			}
+			
+			.navbar-style li a:hover
+			{
+				background: #8B0000;
+				color: white;
+				transition: 0.3s;
+			}
+			
+			.logo
+			{
+				height: 75px;
+				padding: 15px;
+				float: left;
+			}
+			
+			.icon-bar
+			{
+				background-color: white;
+			}
+			
+			.navbar-toggle
+			{
+				top: 12px;
+			}
+			
+			.span-color:hover
+			{
+				color: #8B0000;
+			}
+			
+			.header1
+			{
+				letter-spacing: 5px;
+				font-size: 20px;
+			}
+			
+			.content
+			{
+				overflow-x: hidden;
+			}
+			
+			.modal-body
+			{
+				height: 35%;
+			}
+			
+			.modal-body img
+			{
+				float: left;
+				width: 25%;
+				margin: 5%;
+				border-radius: 50%;
+				display: inline-block;
+			}
+			
+			.modal-body-content
+			{
+				height: 0%;
+				float: right;
+				text-align: left;
+				padding-right: 15%;
+			}
+			
+			h4
+			{
+				font-size: 12px;
+			}
+			
+			h1
+			{
+				padding-left: 15%;
+			}
+			
+			.col-md-6
+			{
+				padding: 3%;
+				text-align: center;
+				overflow-y: hidden;
+				background-color: #D3D3D3;
+			}
+			
+			.content-p
+			{
+				padding:5%; 
+				background: url(https://i.redd.it/0lxkkhow3w321.png);
+				background-position: cover;
+				background-repeat: no-repeat;
+				background-size: 100% 150%;
+				height: 67%;
+				width: 100%;
+			}
+			
+			.par
+			{
+				font-size: 30px;
+				color: white;
+				transform: translate(0, 150%)
+			}
+			
+			.row-1
+			{
+				padding: 0px;
+				margin: 0px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header class = "header">
+			<nav class = "navbar navbar-style">
+				<div class = "container">
+					<div class = "navbar-header">
+						<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#micon">
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						</button>
+						<a href = ""><img class = "logo" src = "icon.png"></a>
+					</div>
+					<div class = "collapse navbar-collapse" id = "micon">
+						<ul class = "nav navbar-nav navbar-right">
+							<li><a href = "index.html">Home</a></li>
+							<li><a href = "about.html">About</a></li>
+							<li><a href = "gallery.html">Gallery</a></li>
+							<li><a href = "merch.html">Merchandise</a></li>
+							<li><a data-target = "#contact" data-toggle = "modal">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class = "content">
+			<div id = "PewDiePie" class = "header1">
+				<p><center>
+					PewDiePie Currently have <div class = "live_sub_count">0</div> Subscribers!
+				</center></p>
+			</div>
+			<hr/>
+			
+			<div class = "row-1">
+				<div class = "col-md-6">
+					<h2>PewDiePie's 10 year Anniversary Video</h2>
+					<div class="embed-responsive embed-responsive-4by3">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/429WCrxZqe0"></iframe>
+					</div>
+				</div>
+				<div class = "col-md-6">
+						<h2>Welcome to the my PewDiePie's fanmade website!</h2>
+					<div class = "content-p">
+						<div class = "par">
+							<p>
+								Click here to Subscribe to PewDiePie
+								</br>
+								</br>
+								<a class="btn btn-danger btn-lg" href="https://www.youtube.com/channel/UC-lHJZR3Gqxm24_Vd_AJ5Yw" role="button">Subscribe</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class = "modal fade" id = "contact" tabindex = "-1">
+			<div class = "modal-dialog">
+				<div class = "modal-content">
+					<div class = "modal-header">
+					<button class = "close" data-dismiss = "modal">&times;</button>
+						<h3 class = "modal-title"><center>Contact Details</center></h4>
+					</div>
+					<div class = "modal-body">
+						<img src = "Contact_Image.jpg" />
+						<div class = " modal-body-content">
+							</br>
+							</br>
+							<h4><b><u>Name</u></b></h4>
+							<h4>Allen Christopher G. Guelas</h4>
+							<h4><b><u>Section</u></b></h4>
+							<h4>2 - ITF</h4>
+							<h4><b><u>Email</u></b></h4>
+							<h4>allenchristopher.guelas.iics@ust.edu.ph</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var key = 'AIzaSyBRXO28eCd9_e2eoNb7psCnnfSCE2po3ZY';
+			
+			var PewDiePieSubCount = new Odometer({
+				el: document.querySelector('#PewDiePie .live_sub_count'),
+				format: ',ddd',
+				theme: 'car'
+			})
+			getYoutubeChannelData('PewDiePie');
+			
+			function getYoutubeChannelData(channel){
+				var youtubeApiUrl = 'https://www.googleapis.com/youtube/v3/channels?part=statistics&forUsername='+channel+'&key='+key;
+				
+				$.getJSON(youtubeApiUrl, function(result){
+					PewDiePieSubCount.update(result['items'][0]['statistics']['subscriberCount']);
+				})
+			}
+		</script>
+	</body>
+</html>

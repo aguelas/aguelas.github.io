@@ -1,0 +1,204 @@
+<!-- IMPORT !-->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<html>
+	<head>
+		<title>The Pewdiepie Site</title>
+		<link rel = "icon" type = "image/png" href = "icon.png" />
+		
+		<style>
+			*
+			{
+				margin: 0;
+				padding: 0;
+			}
+			
+			.navbar-style
+			{
+				background: #D3D3D3;
+				box-shadow: 0 5px 10px #EFEFEF;
+				text-transform: uppercase;
+			}
+			
+			.navbar-style li a
+			{
+				padding: 28px;
+				color: black;
+			}
+			
+			.navbar-style li a:hover
+			{
+				background: #8B0000;
+				color: white;
+				transition: 0.3s;
+			}
+			
+			.logo
+			{
+				height: 75px;
+				padding: 15px;
+				float: left;
+			}
+			
+			.icon-bar
+			{
+				background-color: white;
+			}
+			
+			.navbar-toggle
+			{
+				top: 12px;
+			}
+			
+			h1
+			{
+				text-transform:uppercase;
+				text-align: center;
+				font-size: 60px;
+			}
+			
+			.soon-body
+			{
+				font-family: consolas;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 60vh;
+			}
+			
+			.soon{
+				position: relative;
+				-webkit-box-reflect: below -12px linear-gradient(transparent, rgba(255,255,255,0.2));
+			}
+			
+			.soon span
+			{
+				position: relative;
+				display: inline-block;
+				font-size: 2em;
+				text-transform: uppercase;
+				animation: animate 3s ease-in-out infinite;
+				animation-delay: calc(0.1s * var(--i));
+			}
+			
+			@keyframes animate
+			{
+				0%
+				{
+					transform: translateY(0px);
+				}
+				20%
+				{
+					transform: translateY(-20px);
+				}
+				40%, 100%
+				{
+					transform: translateY(0px);
+				}
+			}
+			
+			.modal-body
+			{
+				height: 35%;
+			}
+			
+			.modal-body img
+			{
+				float: left;
+				width: 25%;
+				margin: 5%;
+				border-radius: 50%;
+				display: inline-block;
+			}
+			
+			.modal-body-content
+			{
+				height: 0%;
+				float: right;
+				text-align: left;
+				padding-right: 15%;
+			}
+			
+			h4
+			{
+				font-size: 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<header class = "header">
+			<nav class = "navbar navbar-style">
+				<div class = "container">
+					<div class = "navbar-header">
+						<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#micon">
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						</button>
+						<a href = ""><img class = "logo" src = "icon.png"></a>
+					</div>
+					<div class = "collapse navbar-collapse" id = "micon">
+						<ul class = "nav navbar-nav navbar-right">
+							<li><a href = "index.html">Home</a></li>
+							<li><a href = "about.html">About</a></li>
+							<li><a href = "gallery.html">Gallery</a></li>
+							<li><a href = "merch.html">Merchandise</a></li>
+							<li><a data-target = "#contact" data-toggle = "modal">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		</br>
+		<h1><u>gallery</u></h1>
+		<div class = "soon-body">
+			<div class = "soon">
+				<span style = "--i:1;">c</span>
+				<span style = "--i:2;">o</span>
+				<span style = "--i:3;">m</span>
+				<span style = "--i:4;">i</span>
+				<span style = "--i:5;">n</span>
+				<span style = "--i:6;">g</span>
+				<span style = "--i:7;">&#160;</span>
+				<span style = "--i:8;">s</span>
+				<span style = "--i:9;">o</span>
+				<span style = "--i:10;">o</span>
+				<span style = "--i:11;">n</span>
+				<span style = "--i:12;">.</span>
+				<span style = "--i:13;">.</span>
+				<span style = "--i:14;">.</span>
+			</div>
+		</div>
+		
+		<div class = "modal fade" id = "contact" tabindex = "-1">
+			<div class = "modal-dialog">
+				<div class = "modal-content">
+					<div class = "modal-header">
+					<button class = "close" data-dismiss = "modal">&times;</button>
+						<h3 class = "modal-title"><center>Contact Details</center></h4>
+					</div>
+					<div class = "modal-body">
+						<img src = "Contact_Image.jpg" />
+						<div class = " modal-body-content">
+							</br>
+							</br>
+							<h4><b><u>Name</u></b></h4>
+							<h4>Allen Christopher G. Guelas</h4>
+							<h4><b><u>Section</u></b></h4>
+							<h4>2 - ITF</h4>
+							<h4><b><u>Email</u></b></h4>
+							<h4>allenchristopher.guelas.iics@ust.edu.ph</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
